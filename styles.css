@@ -1,8 +1,8 @@
 :root {
   --violet: rgb(112, 15, 156);
-  --lavander: rgb(151, 105, 211);
-  --deepmagenta: rgb(78, 2, 49);
-  --red: rgb(214, 25, 57);
+  --lavander: rgb(165, 126, 216);
+  --deepmagenta: rgb(67, 2, 42);
+  --red: rgb(228, 30, 63);
   --black: rgb(25, 25, 25);
   --white: rgb(245, 245, 245);
 }
@@ -109,20 +109,32 @@ nav a {
 .sec1 {
   height: 500px;
   background-color: var(--violet);
-      display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .sec2 {
   height: 500px;
+  color: var(--deepmagenta);
   background-color: var(--lavander);
-      display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.sec2 p, .sec1 p{
+.sec2 a {
+  color: var(--white);
+  text-shadow: 1px 1px 1px var(--deepmagenta);
+}
+
+.sec2 a:hover {
+  color: var(--red);
+  text-shadow: 1px 1px 1px var(--deepmagenta);
+}
+
+.sec2 p,
+.sec1 p {
   max-width: 800px;
 }
 
@@ -140,7 +152,7 @@ footer {
   width: 50px;
   background-color: var(--deepmagenta);
   overflow: hidden;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -151,14 +163,14 @@ footer {
   transition: 0.2s
 }
 
-.socialMediaButton img{
+.socialMediaButton img {
   height: 32px;
   width: 32px;
   margin-top: 0.5em;
   opacity: 70%;
 }
 
-.socialMediaButton img:hover{
+.socialMediaButton img:hover {
   opacity: 100%;
   transform: 0.2s;
 }
