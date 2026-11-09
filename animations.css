@@ -1,0 +1,21 @@
+.slideDown {
+    animation-name: slideDown;
+	animation-duration: 0.7s;
+}
+
+@keyframes slideDown{
+    0% { transform: translateY(-25px);}
+    100% {transform: translateY(0px);}
+}
+
+.fade-in-fade-out {
+    animation-name: fade-in-fade-out;
+	animation-duration: 2s;
+
+}
+
+@keyframes fade-in-fade-out {
+    0% {opacity: 0%;}
+    20% {opacity: 100%;}
+    100% {opacity: 0%;}
+}

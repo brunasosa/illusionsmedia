@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Illusions Media</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <nav>
+    <nav role="navigation">
         <a href="#about">Sobre nosotros</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#contact">Contacto</a>
     </nav>
-    <header>
-        <img src="img/logo1.png" alt="">
+    <header role="banner">
+        <img src="img/logo1.png" class="slideDown" alt="">
     </header>
-    <div class="mainContainer">
+    <main class="mainContainer" role="main">
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium ut delectus possimus dolore!
             Fuga vel voluptatem dolores perspiciatis dolorem quod quo ad harum saepe facere a, repellendus voluptate
             deserunt. <a href="#">Leer más</a></p>
 
 
-    </div>
+        </main>
     <div class="sec1" id="about">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque modi non exercitationem nesciunt
             molestiae, amet consequatur assumenda officia! Suscipit ea possimus, quisquam minima nulla provident quod
@@ -37,11 +38,12 @@
             placeat dolorem? <a href="#">Leer más</a></p>
     </div>
 
-    <footer id="contact">
+    <footer id="contact" role="contentinfo">
+        <div class="contactContainer">
         <p>Illusions Media.</p>
         <span class="socialMediaButton"><a href="#"><img src="img/InBug-White.png" alt=""></a></span>
         <span class="socialMediaButton"><a href="#"><img src="img/Instagram_simple_icon.png" alt=""></a></span>
-        <span class="socialMediaButton"><a href="#"><img src="" alt=""></a></span>
+        <span class="socialMediaButton"><a href="#"><img src="" alt=""></a></span></div>
     </footer>
 </body>
 
