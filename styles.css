@@ -1,16 +1,17 @@
 :root {
-    --violet: rgb(120, 30, 162);
-    --lavander: rgb(151, 105, 211);
-    --deepmagenta: rgb(106, 6, 55);
-    --red: rgb(183, 25, 52);
-    --black: rgb(25, 25, 25);
-    --white: rgb(245, 245, 245);
+  --violet: rgb(112, 15, 156);
+  --lavander: rgb(151, 105, 211);
+  --deepmagenta: rgb(96, 2, 60);
+  --red: rgb(186, 16, 44);
+  --black: rgb(25, 25, 25);
+  --white: rgb(245, 245, 245);
 }
 
 @font-face {
   font-family: Montserrat;
   src: url(fonts/Montserrat-Regular.ttf);
 }
+
 @font-face {
   font-family: Montserrat-Light;
   src: url(fonts/Montserrat-Light.ttf);
@@ -42,38 +43,42 @@
 }
 
 * {
-    margin: auto;
-    padding: 0;
-    box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--black);
-    text-align: center;
-    font-family: Montserrat;
-    color: var(--white);
-    letter-spacing: 0.03em;
-    line-height: 1.6;
+  background-color: var(--black);
+  text-align: center;
+  font-family: Montserrat;
+  color: var(--white);
+  letter-spacing: 0.03em;
+  line-height: 1.6;
 }
 
 a {
-    font-family: Allerta;
-    color: var(--red);
-    text-decoration: none;
+  font-family: Allerta;
+  color: var(--red);
+  text-decoration: none;
+  text-shadow: 1px 1px 1px var(--deepmagenta);
 }
 
 a:hover {
-    color: var(--white);
-    transition: 0.2s;
+  color: var(--white);
+  transition: 0.2s;
 }
 
 header {
-  margin: 1em;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 header img {
   filter: invert();
-  opacity: 50%;
+  opacity: 70%;
+  height: 200px;
 }
 
 header img:hover {
@@ -84,14 +89,76 @@ header img:hover {
 
 nav {
   padding: 1em;
+  top: 0;
   background-color: var(--deepmagenta);
+  position: sticky;
+  z-index: 2;
 }
 
 nav a {
   margin: 0.3em;
+
 }
 
-footer { 
+.mainContainer {
+  max-width: 800px;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.sec1 {
+  height: 500px;
+  background-color: var(--violet);
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec2 {
+  height: 500px;
+  background-color: var(--lavander);
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec2 p, .sec1 p{
+  max-width: 800px;
+}
+
+footer {
   background-color: var(--black);
   color: var(--white);
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMediaButton {
+  height: 50px;
+  width: 50px;
+  background-color: var(--deepmagenta);
+  overflow: hidden;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.socialMediaButton:hover {
+  background-color: var(--red);
+  transition: 0.2s
+}
+
+.socialMediaButton img{
+  height: 32px;
+  width: 32px;
+  margin-top: 0.5em;
+  opacity: 70%;
+}
+
+.socialMediaButton img:hover{
+  opacity: 100%;
+  transform: 0.2s;
 }
