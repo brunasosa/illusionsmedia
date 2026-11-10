@@ -8,14 +8,27 @@
     100% {transform: translateY(0px);}
 }
 
-.fade-in-fade-out {
-    animation-name: fade-in-fade-out;
+.fadeIn {
+    animation-name: fadeIn;
+	animation-duration: 3s;
+
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0%;}
+    50% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+.fadeInFadeOut {
+    animation-name: fadeInFadeOut;
 	animation-duration: 2s;
 
 }
 
-@keyframes fade-in-fade-out {
+@keyframes fadeInFadeOut {
     0% {opacity: 0%;}
     20% {opacity: 100%;}
     100% {opacity: 0%;}
 }
+

@@ -77,7 +77,7 @@ a:hover {
 
 header {
   margin-top: 5em;
-  margin-bottom: 5em;
+  margin-bottom: 10em;
 
 }
 
@@ -147,7 +147,7 @@ nav a {
 footer {
   background-color: var(--black);
   color: var(--white);
-  min-height: 200px;
+  min-height: 500px;
     display: flex;
   justify-content: center;
   align-items: center;
