@@ -67,6 +67,7 @@ a {
   color: var(--red);
   text-decoration: none;
   text-shadow: 1px 1px 1px var(--deepmagenta);
+  transition: 0.2s;
 }
 
 a:hover {
@@ -84,6 +85,7 @@ header img {
   filter: invert();
   opacity: 70%;
   height: 200px;
+    transition: 0.5s;
 }
 
 header img:hover {
@@ -94,7 +96,6 @@ header img:hover {
 nav {
   padding: 1em;
   top: 0;
-  background-color: var(--deepmagenta);
   background-image: linear-gradient(var(--black), var(--transparent));
   position: sticky;
   z-index: 2;
