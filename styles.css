@@ -95,6 +95,7 @@ nav {
   padding: 1em;
   top: 0;
   background-color: var(--deepmagenta);
+  background-image: linear-gradient(var(--black), var(--transparent));
   position: sticky;
   z-index: 2;
 }
@@ -111,7 +112,7 @@ nav a {
 }
 
 .sec1 {
-  height: 500px;
+  height: 800px;
   background-color: var(--violet);
   display: flex;
   justify-content: center;
@@ -119,7 +120,7 @@ nav a {
 }
 
 .sec2 {
-  height: 500px;
+  height: 800px;
   color: var(--deepmagenta);
   background-color: var(--lavander);
   display: flex;
