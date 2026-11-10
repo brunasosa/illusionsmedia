@@ -1,6 +1,6 @@
 .slideDown {
     animation-name: slideDown;
-	animation-duration: 0.7s;
+	animation-duration: 1s;
 }
 
 @keyframes slideDown{
