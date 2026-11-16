@@ -1,10 +1,12 @@
 :root {
-  --violet: rgb(112, 15, 156);
+  --blue: rgb(28, 175, 208);
+  --violet: rgb(121, 30, 162);
   --lavander: rgb(165, 126, 216);
   --deepmagenta: rgb(67, 2, 42);
   --red: rgb(228, 30, 63);
+  --orange: rgb(255, 131, 54);
   --black: rgb(25, 25, 25);
-  --white: rgb(245, 245, 245);
+  --white: rgb(235, 235, 235);
   --transparent: rgba(0, 0, 0, 0);
 }
 
@@ -52,8 +54,8 @@
 
 body {
   background-color: var(--black);
-  background-image: radial-gradient(var(--black), rgba(0, 0, 0, 0)), url(img/gifojoyoqc.gif);
-  background-repeat: no-repeat, repeat;
+  /*background-image: radial-gradient(var(--black), rgba(0, 0, 0, 0)), url(img/gifojoyoqc.gif);
+  background-repeat: no-repeat, repeat;*/
   background-size: cover, 256px;
   text-align: center;
   font-family: Montserrat;
@@ -64,34 +66,32 @@ body {
 
 a {
   font-family: Allerta;
-  color: var(--red);
+  color: var(--white);
   text-decoration: none;
   text-shadow: 1px 1px 1px var(--deepmagenta);
   transition: 0.2s;
 }
 
 a:hover {
-  color: var(--white);
+  color: white;
   transition: 0.2s;
 }
 
 header {
   margin-top: 5em;
   margin-bottom: 10em;
-
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header img {
   filter: invert();
-  opacity: 70%;
   height: 200px;
-    transition: 0.5s;
-}
-
-header img:hover {
-  opacity: 100%;
   transition: 0.5s;
 }
+
 
 nav {
   padding: 1em;
@@ -102,7 +102,7 @@ nav {
 }
 
 nav a {
-  margin: 0.3em;
+  margin: 0.5em;
 
 }
 
@@ -129,15 +129,6 @@ nav a {
   align-items: center;
 }
 
-.sec2 a {
-  color: var(--white);
-  text-shadow: 1px 1px 1px var(--deepmagenta);
-}
-
-.sec2 a:hover {
-  color: var(--red);
-  text-shadow: 1px 1px 1px var(--deepmagenta);
-}
 
 .sec2 p,
 .sec1 p {
@@ -148,7 +139,7 @@ footer {
   background-color: var(--black);
   color: var(--white);
   min-height: 500px;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -160,7 +151,8 @@ footer {
   align-items: center;
 }
 
-.contactContainer span, .contactContainer p {
+.contactContainer span,
+.contactContainer p {
   margin: 2em;
 }
 
@@ -181,13 +173,8 @@ footer {
 }
 
 .socialMediaButton img {
-  height: 32px;
+
   width: 32px;
   margin-top: 0.5em;
-  opacity: 70%;
-}
 
-.socialMediaButton img:hover {
-  opacity: 100%;
-  transform: 0.2s;
 }
