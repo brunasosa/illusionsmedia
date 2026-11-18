@@ -190,11 +190,21 @@ footer {
 }
 
 #containerParallax p,
-#containerParallax img,
-.galeriaProyecto p {
+#containerParallax img {
   max-width: 400px;
   margin-top: 2em;
+    font-family: Belgrano;
+  
 }
+
+
+.galeriaProyecto p {
+  max-width: 600px;
+  margin-top: 2em;
+  font-family: Belgrano;
+
+}
+
 
 .galeriaProyecto {
   background-color: var(--deepmagenta);
@@ -203,6 +213,12 @@ footer {
 
 .imgGaleriaProyecto {
   max-width: 800px;
+}
+
+
+.galeriaProyecto a{
+  font-family: Belgrano;
+  color: var(--lavander);
 }
 
 @media (max-width: 1280px) {
